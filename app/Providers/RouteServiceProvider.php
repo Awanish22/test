@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const Data = '/data-list';
+    public const Data = '/index';
 
     /**
      * The controller namespace for the application.

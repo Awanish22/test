@@ -19,14 +19,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
+Auth::routes();
+Route::get('/index',[UserController::class,'index']);
 // empolyees
 Route::get('/empolyee', function () {
     return view('create');
 });
 Route::post('/empolyee_reg', [UserController::class,'store']);
-Route::get('/data-list',[UserController::class,'show']);
+Route::get('/data-listt',[UserController::class,'show']);
 Route::post('/update_data/{id}', [UserController::class,'update']);
 Route::get('/data-edit/{id}',[UserController::class,'edit']);
 Route::get('/data-delete/{id}',[UserController::class,'destroy']);

@@ -23,11 +23,11 @@
                 <div class="col-6" style="margin: auto;">
                     <div class="card" style="border-color: #f0ad4e">
                         <div class="card-header">
-                            Add Contact
+                            Add Employee
                         </div>
                         <div class="card-body">
                             <div class="col" style="text-align:right">
-                                <a href="{{ url('/data-list') }}"><button class="btn btn-warning"><i
+                                <a href="{{ url('/data-listt') }}"><button class="btn btn-warning"><i
                                             class="fa fa-list"></i> List</button></a><br><br>
                             </div>
                             <div class="col">
@@ -53,8 +53,8 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="address">Phone <span style="color: red">*</span></label>
-                                                <textarea name="phone" class="form-control"
-                                                    placeholder="Enter phone here"></textarea>
+                                                <input name="phone" class="form-control"
+                                                    placeholder="Enter phone here"/>
                                                 <span style="color: red">@error('phone'){{ $message }}@enderror</span>
                                                 </div>
                                                 <div class="form-group">

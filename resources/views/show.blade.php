@@ -29,9 +29,7 @@
                     </div>
                     <div class="card-body">
 
-                        {{-- flash message --}}
-                        {{-- @include('flash-message') --}}
-
+                       
                         <div class="col" style="text-align:right">
                             <a href="{{ url('/empolyee') }}"><button class="btn btn-info">Add
                                 Empolyee</button></a><br><br>
@@ -76,8 +74,8 @@
                 </div>
             </div>
         </div>
-        <h5>Pagination:</h5>
-    {{ $data->links() }}
+        {{-- <h5>Pagination:</h5>
+    {{ $data->links() }} --}}
     </section>
 
     {{-- bootstrap --}}
